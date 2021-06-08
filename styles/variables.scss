@@ -1,0 +1,31 @@
+$c-white: #fff;
+$c-background-header: #000000FF;
+$c-menu-hover: rgba(154, 143, 143, 0.4);
+$c-input-color: #868686;
+$c-main-background: #383838;
+$c-border: #666666;
+
+
+@mixin _992 {
+  @media screen and (max-width: 992px) {
+    @content
+  }
+}
+
+@mixin _768 {
+  @media screen and (max-width: 768px) {
+    @content
+  }
+}
+
+@mixin _480 {
+  @media screen and (max-width: 480px) {
+    @content
+  }
+}
+
+@mixin _375 {
+  @media screen and (max-width: 375px) {
+    @content
+  }
+}

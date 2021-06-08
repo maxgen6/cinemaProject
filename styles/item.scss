@@ -1,0 +1,49 @@
+@import "variables";
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.item {
+  flex: 1 0 auto;
+  padding: 50px 0;
+  background: $c-main-background;
+
+  &-block {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid $c-border;
+    padding: 20px 15px;
+
+    @include _480 {
+      flex-direction: column;
+    }
+
+    &__img {
+      width: 30%;
+
+      @include _480 {
+        width: 100%;
+      }
+      img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+      }
+    }
+
+    &__description {
+      width: 65%;
+
+      @include _480 {
+        width: 100%;
+        margin-top: 15px;
+      }
+      p {
+        margin-top: 15px;
+      }
+    }
+  }
+}
